@@ -14,5 +14,15 @@
     Key: name of the clothes
     Value: the Instance itself (with all fields!!!) --> DONE
 
+4. With reading the file actually I am ready with the first 5 tasks! --> READY with the hardest part!!! HALLELUJAH ...
+
+5. Create a method for counting all clothes I had!
+    - first way count the items one by one iterating through all list (or first create one list of all lists!)
+    - iterating through the map, and counting items! --> I choose this one, bigger challenge for me! --> DONE
+
+6. to check the remaining stuffs by quality codes (how many I kept) I used the separate list (that includes items 1by1) --> DONE
+
+7. using for printing all previously collected data's! --> DONE
+
 
 
