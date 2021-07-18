@@ -9,7 +9,7 @@ import java.util.*;
 
 public class FileHandler {
 
-    private static final String RELATIVE_PATH = "src/resources/clother.txt"; // src/resources/clothes.txt
+    private static final String RELATIVE_PATH = "src/resources/clothes.txt"; // src/resources/clothes.txt
     private static final String RELATIVE_PATH_FOR_TEST = "src/resources/test.txt";
 
     private static List<Shirt> shirtsList = new ArrayList<>();
@@ -44,7 +44,7 @@ public class FileHandler {
     }
 
     public static void readToMap() throws IOException {
-        FileReader fileReader = new FileReader(RELATIVE_PATH_FOR_TEST);
+        FileReader fileReader = new FileReader(RELATIVE_PATH);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         for (String line; (line = bufferedReader.readLine()) != null;) {
