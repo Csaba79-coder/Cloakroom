@@ -40,13 +40,14 @@ zokniknál:
 
 Feladatok
 
-Készítsd el az osztályokat, amelyek a fenti adatok tárolását lehetővé teszik! Használj öröklődést!
+1. Készítsd el az osztályokat, amelyek a fenti adatok tárolását lehetővé teszik! Használj öröklődést!
 Tipp: nézz utána az enumoknak! Hasznos lehet.
 https://www.w3schools.com/java/java_enums.asp
 
 
-Hozz létre néhány ruhadarabot magadtól, és teszteld az osztályaidat!
-Az én ruháim adatait a clothes.txt fájl tartalmazza. Töltsd le a fájlt, és add hozzá a projektedhez!
+2. Hozz létre néhány ruhadarabot magadtól, és teszteld az osztályaidat!
+
+3. Az én ruháim adatait a clothes.txt fájl tartalmazza. Töltsd le a fájlt, és add hozzá a projektedhez!
 A fájlban egy sor egy ruha, a ruha adatai vesszővel elválasztva követik egymást.
 Az adatok sorrendje:
 
@@ -64,14 +65,18 @@ ruhafajta, ki hordhatja, állapota, mérete
 ruhafajta, ki hordhatja, állapota, típusa
 
 
-Olvasd be a fájlt, és a tartalmát tárold egy megfelelő adatstruktúrában! (Az összes ruhát kezeld együtt, azaz add hozzá őket egy kollekcióhoz.)
-Szortírozd a ruháimat a fajtájuk szerint! Azaz gondoskodj arról, hogy a pólók, az ingek, a nadrágok stb. külön-külön legyenek.
-Segíts nekem a ruhák selejtezésében a következőképpen:
+4.  Olvasd be a fájlt, és a tartalmát tárold egy megfelelő adatstruktúrában! (Az összes ruhát kezeld együtt, azaz add hozzá őket egy kollekcióhoz.)
+
+5. Szortírozd a ruháimat a fajtájuk szerint! Azaz gondoskodj arról, hogy a pólók, az ingek, a nadrágok stb. külön-külön legyenek.
+
+6. Segíts nekem a ruhák selejtezésében a következőképpen:
 A ruhákat az állapotuk szerint selejtezem…
 
 - az 1-es és a 2-es állapotú ruhákat megtartom,
 - a 3-as és a 4-es állapotú ruhákat eladományozom,
 - az 5-ös ruhákat kidobom.
 
-Állapítsd meg, hogy eredetileg hány ruhám volt (összesen és fajtánként is), valamint hogy a szortírozás után mennyi maradt.
+7. Állapítsd meg, hogy eredetileg hány ruhám volt (összesen és fajtánként is), valamint hogy a szortírozás után mennyi maradt.
+8.
+
 Állapítsd meg azt is, hogy melyik ruhafajtából mennyit dobok ki, valamint mennyit adományozok el.

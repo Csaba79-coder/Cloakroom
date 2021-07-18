@@ -1,0 +1,18 @@
+1. Create classes (parent and child)
+    - Clothes is the parent
+        - 3 fields:
+            String name;
+                GenderEnum genderType;
+                QualityEnum qualityMark;
+    - Separate child those extends from Clothes!
+        - Children are: T-Shirt, Shirt, Pants, Jacket (or Coat), Shoes, Socks
+            they all have different and special field, those fields belongs to only one of them!!!  --> DONE
+
+2. creating test file with some different kind of examples! --> DONE
+
+3. Reading file (into a map!)
+    Key: name of the clothes
+    Value: the Instance itself (with all fields!!!) --> DONE
+
+
+

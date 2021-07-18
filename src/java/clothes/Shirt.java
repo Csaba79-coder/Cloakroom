@@ -1,8 +1,5 @@
 package clothes;
 
-import modell.Gender;
-import modell.Quality;
-
 public class Shirt extends Clothes {
 
     boolean isLongSleeves;
@@ -10,9 +7,21 @@ public class Shirt extends Clothes {
     public Shirt() {
     }
 
-    public Shirt(String name, Gender genderType, Quality qualityMark, boolean isLongSleeves) {
+    public Shirt(String[] parts) {
+        this(parts[0], parts[1], parts[2], parts[3]);
+    }
+
+    public Shirt(String name, String genderType, String qualityMark, String isLongSleeves) {
         super(name, genderType, qualityMark);
-        this.isLongSleeves = isLongSleeves;
+        this.isLongSleeves = transformIsLongSleevesFromString(isLongSleeves);
+    }
+
+    public boolean transformIsLongSleevesFromString(String isLongSleeves) {
+        if (isLongSleeves.equals("igen")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public boolean isLongSleeves() {

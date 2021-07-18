@@ -1,21 +1,25 @@
 package clothes;
 
-import modell.Gender;
-import modell.Quality;
+import modell.GenderEnum;
+import modell.QualityEnum;
 
 public class Clothes {
 
     String name;
-    Gender genderType;
-    Quality qualityMark;
+    GenderEnum genderType;
+    QualityEnum qualityMark;
 
     public Clothes() {
     }
 
-    public Clothes(String name, Gender genderType, Quality qualityMark) {
+    public Clothes(String[] parts) {
+        this(parts[0], parts[1], parts[2]);
+    }
+
+    public Clothes(String name, String genderType, String qualityMark) {
         this.name = name;
-        this.genderType = genderType;
-        this.qualityMark = qualityMark;
+        this.genderType = GenderEnum.getEnumByLabel(genderType);
+        this.qualityMark = QualityEnum.getQualityMark(Integer.parseInt(qualityMark));
     }
 
     public String getName() {
@@ -26,19 +30,19 @@ public class Clothes {
         this.name = name;
     }
 
-    public Gender getGenderType() {
+    public GenderEnum getGenderType() {
         return genderType;
     }
 
-    public void setGenderType(Gender genderType) {
+    public void setGenderType(GenderEnum genderType) {
         this.genderType = genderType;
     }
 
-    public Quality getQualityMark() {
+    public QualityEnum getQualityMark() {
         return qualityMark;
     }
 
-    public void setQualityMark(Quality qualityMark) {
+    public void setQualityMark(QualityEnum qualityMark) {
         this.qualityMark = qualityMark;
     }
 }
