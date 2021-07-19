@@ -22,7 +22,7 @@ public class FileHandler {
     public static Map<String, List<Clothes>> clothesListHashMap = new HashMap<>();
 
     public static void read() throws IOException {
-        FileReader fileReader = new FileReader(RELATIVE_PATH_FOR_TEST);
+        FileReader fileReader = new FileReader(RELATIVE_PATH);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         for (String line; (line = bufferedReader.readLine()) != null; ) {
             String[] parts = line.split(",");
@@ -44,7 +44,7 @@ public class FileHandler {
     }
 
     public static void readToMap() throws IOException {
-        FileReader fileReader = new FileReader(RELATIVE_PATH_FOR_TEST);
+        FileReader fileReader = new FileReader(RELATIVE_PATH);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         for (String line; (line = bufferedReader.readLine()) != null;) {
