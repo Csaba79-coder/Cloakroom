@@ -65,5 +65,7 @@ public class Processor {
         System.out.println("I donated and throw away from all stuffs: " + (sum - sumAllRemainingStuffs));
 
         // int numOfTShirt = clothesController.countItemIteratingThrowMap(FileHandler.clothesListHashMap, "póló");
+//        int hope = clothesController.countItemsHashMap(FileHandler.clothesListHashMap, "póló");
+//        System.out.println(hope);
     }
 }

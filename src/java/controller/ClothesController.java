@@ -25,10 +25,27 @@ public class ClothesController {
             int counter = 0;
             Map<String, List<Clothes>> tempHashMap = new HashMap<>();
             for (int j = 0; j < clothesListHashMap.values().size(); j++) {
-                if (clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1) || clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1)) {
+                if (clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1) || clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(2)) {
                     Clothes currentClothes = new Clothes();
                     tempHashMap.putIfAbsent(currentClothes.getName(), new ArrayList<>());
                     tempHashMap.get(currentClothes.getName()).add(currentClothes);
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        return -1;
+    }*/
+
+    /*public int countItemsHashMap(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
+        for (int i = 0; i < clothesListHashMap.size(); i++) {
+            int counter = 0;
+            ArrayList<String> tempArrayList = new ArrayList<>();
+            for (int j = 0; j < clothesListHashMap.values().size(); j++) {
+                if (clothesListHashMap.containsKey(clothes) &&
+                        clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1) ||
+                        clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(2)) {
+                    tempArrayList.add(clothesListHashMap.get(clothes).get(i).getName());
                     counter++;
                 }
             }
