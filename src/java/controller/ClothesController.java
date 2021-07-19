@@ -6,6 +6,7 @@ import java.util.*;
 
 public class ClothesController {
 
+    
     public int countItems(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
         int i = 0;
         if (i < clothesListHashMap.size()) {
@@ -20,39 +21,27 @@ public class ClothesController {
         return -1;
     }
 
- /*   public int countItemIteratingThrowMap(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
-        for (int i = 0; i < clothesListHashMap.size(); i++) {
-            int counter = 0;
-            Map<String, List<Clothes>> tempHashMap = new HashMap<>();
-            for (int j = 0; j < clothesListHashMap.values().size(); j++) {
-                if (clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1) || clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(2)) {
-                    Clothes currentClothes = new Clothes();
-                    tempHashMap.putIfAbsent(currentClothes.getName(), new ArrayList<>());
-                    tempHashMap.get(currentClothes.getName()).add(currentClothes);
-                    counter++;
-                }
+    public int collectItemsByItemsByQualityMark(List<Clothes> clothesList) {
+        List<String> tempFinal = new ArrayList<>();
+        for (Clothes clothesItem : clothesList) {
+            if (clothesItem.getQualityMark().QUALITY_MARK.equals(1) || clothesItem.getQualityMark().QUALITY_MARK.equals(2)) {
+                tempFinal.add(clothesItem.getName());
             }
-            return counter;
         }
-        return -1;
-    }*/
+        return tempFinal.size();
+    }
 
-    /*public int countItemsHashMap(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
-        for (int i = 0; i < clothesListHashMap.size(); i++) {
-            int counter = 0;
-            ArrayList<String> tempArrayList = new ArrayList<>();
-            for (int j = 0; j < clothesListHashMap.values().size(); j++) {
-                if (clothesListHashMap.containsKey(clothes) &&
-                        clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(1) ||
-                        clothesListHashMap.get(clothes).get(i).getQualityMark().QUALITY_MARK.equals(2)) {
-                    tempArrayList.add(clothesListHashMap.get(clothes).get(i).getName());
-                    counter++;
+    public int collectItemsByItemsByQualityMark(Map<String, List<Clothes>> clothesListHashMap) {
+        List<String> tempFinal = new ArrayList<>();
+        for (List<Clothes> clothesList : clothesListHashMap.values()) {
+            for (Clothes clothesItem : clothesList) {
+                if (clothesItem.getQualityMark().QUALITY_MARK.equals(1) || clothesItem.getQualityMark().QUALITY_MARK.equals(2)) {
+                    tempFinal.add(clothesItem.getName());
                 }
             }
-            return counter;
         }
-        return -1;
-    }*/
+        return tempFinal.size();
+    }
 
     public int countRemainingTShirts(List<TShirt> tShirtsList) {
         int counter = 0;

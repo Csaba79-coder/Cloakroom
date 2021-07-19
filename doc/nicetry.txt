@@ -1,0 +1,35 @@
+    public int countItemIteratingThrowMap(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
+        Map<String, List<Clothes>> tempHashMap = new HashMap<>();
+        for(List<Clothes> clothesList : clothesListHashMap.values())  {
+            int counter = 0;
+            for (int j = 0; j < clothesList.size(); j++) {
+                if (clothesList.get(j).getQualityMark().QUALITY_MARK.equals(1) ||
+                        clothesList.get(j).getQualityMark().QUALITY_MARK.equals(2)) {
+                    Clothes currentClothes = new Clothes();
+                    tempHashMap.putIfAbsent(currentClothes.getName(), new ArrayList<>());
+                    tempHashMap.get(currentClothes.getName()).add(currentClothes);
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        return -1;
+    }
+
+    public int countItemsHashMap(Map<String, List<Clothes>> clothesListHashMap, String clothes) {
+        List<String> tempList = new ArrayList<>();
+        for (List<Clothes> clothesList : clothesListHashMap.values()) {
+            int counter = 0;
+            for (int j = 0; j < clothesList.size(); j++) {
+                // clothesList.get(j).getName().equals(clothes)
+                // clothesList.contains(clothes) &&
+                if (clothesList.get(j).getQualityMark().QUALITY_MARK.equals(1) ||
+                        clothesList.get(j).getQualityMark().QUALITY_MARK.equals(2)) {
+                    tempList.add(clothesList.get(j).getName());
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        return -1;
+    }
