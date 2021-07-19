@@ -1,10 +1,7 @@
 package module;
 
 import controller.ClothesController;
-import modell.QualityEnum;
 import utils.FileHandler;
-
-import java.io.File;
 import java.io.IOException;
 
 
@@ -66,5 +63,7 @@ public class Processor {
         System.out.println("I donated and throw away from socks: " + (sumSocks - sumRemainingSocks));
 
         System.out.println("I donated and throw away from all stuffs: " + (sum - sumAllRemainingStuffs));
+
+        // int numOfTShirt = clothesController.countItemIteratingThrowMap(FileHandler.clothesListHashMap, "póló");
     }
 }
