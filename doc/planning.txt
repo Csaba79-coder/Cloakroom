@@ -10,9 +10,12 @@
 
 2. creating test file with some different kind of examples! --> DONE
 
-3. Reading file (into a map!)
+3. Reading file!
+3.1 Reading file (into separate lists, to reach all values of the instances!)
+3.2 Reading file (into a map!) --> only includes the fields of the Clothes class (mother class) and does not includes the speciality of the children classes!)
+    IT IS PRACTICE for me!!!
     Key: name of the clothes
-    Value: the Instance itself (with all fields!!!) --> DONE
+    Value: the Instance itself (with all fields!!!) --> DONE (regarding the tasks it is enough!)
 
 4. With reading the file actually I am ready with the first 5 tasks! --> READY with the hardest part!!! HALLELUJAH ...
 
