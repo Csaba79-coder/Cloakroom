@@ -2,8 +2,8 @@
     - Clothes is the parent
         - 3 fields:
             String name;
-                GenderEnum genderType;
-                QualityEnum qualityMark;
+               GenderEnum genderType;
+               QualityEnum qualityMark;
     - Separate child those extends from Clothes!
         - Children are: T-Shirt, Shirt, Pants, Jacket (or Coat), Shoes, Socks
             they all have different and special field, those fields belongs to only one of them!!!  --> DONE
