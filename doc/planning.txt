@@ -1,7 +1,7 @@
 1. Create classes (parent and child)
     - Clothes is the parent
         - 3 fields:
-            String name;
+               String name;
                GenderEnum genderType;
                QualityEnum qualityMark;
     - Separate child those extends from Clothes!
